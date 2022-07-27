@@ -32,6 +32,8 @@ body{
     justify-content: center;
 }
 
+
+/* ============  left login area ============ */
 .login-area{
     width: 60%;
     height: 75vh;
@@ -52,7 +54,7 @@ body{
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -60,6 +62,7 @@ body{
     width: 60%;
     display: block;
     margin: 0 auto;
+    padding-bottom: 1rem;
 }
 
 .title{
@@ -87,6 +90,103 @@ body{
 .icon i {
     font-size: 1.5rem;
     color: white;
+    padding-bottom: 1rem;
+}
+
+/* ============= wave animation ============== */
+
+#waveSection{
+    position: absolute;
+    align-self: flex-end;
+    width: 30%;
+    height: 5rem;
+    /* background-color: black; */
+}
+
+#waveSection .wave1{
+    border-radius: 0 0 1rem 1rem;
+}
+#waveSection .wave2{
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#waveSection .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background: url(./media/wave.png);
+    background-size: 100% 2rem;
+}
+
+#waveSection .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 999;
+    opacity: 0.9;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+#waveSection .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 998;
+    opacity: 0.5;
+    animation-delay: -20s;
+    bottom: 5px;
+}
+
+#waveSection .wave.wave3{
+    animation: animate3 15s linear infinite;
+    z-index: 997;
+    opacity: 0.3;
+    animation-delay: -15s;
+    bottom: 10px;
+}
+
+#waveSection .wave.wave4{
+    animation: animate4 10s linear infinite;
+    z-index: 996;
+    opacity: 0.2;
+    animation-delay: -10s;
+    bottom: 15px;
+}
+
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
 }
 
 
@@ -100,9 +200,19 @@ body{
 
 
 
+
+
+
+
+
+/* =============== right login form ============= */
+
 .login-form{
     border: none;
-    border-radius: 2rem ;
+    border-radius: 1rem ;
+    background: red;
+    padding: 1rem;
+    display: block;
 }
 
 
@@ -111,10 +221,59 @@ body{
 @media screen and (max-width : 1000px) {
 
     .login-area{
-        width: 70%;
-        height: 75vh;
+        width: 80%;
         grid-template-columns: 1fr;
+        height: 70%;
     }
 
+    #waveSection{
+        top: 38.5%;
+        width: 80%;
+    }
+
+    .login-design{
+        background-color: rgb(0, 58, 92);
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0rem 0rem 2rem 0rem rgb(0, 0, 0, 0.5);
+        height: 35vh;
+        display: block;
+        padding: 1rem;
+    }
+
+    .logo{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+    }
     
+    .title{
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.02px;
+        padding: 0 .5rem .5rem;
+        text-align: center;
+    }
+    .title p {
+        font-size: 1rem;
+    }
+    .para{
+        text-align: center;
+        margin-top: 0;
+        font-size: 0.8rem;
+    }
+    
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0.8rem;
+    }
+    
+    .icon i {
+        font-size: 1.5rem;
+        color: white;
+        padding-bottom: 0.5rem;
+    }
 }
