@@ -24,7 +24,7 @@
             <!-- ========= left section ========= -->
             <div class="login-design">
                 <div class="logo-div"></div>
-                <img class="logo" src="./media/pawna_logo png.png" >
+                <!-- <img class="logo" src="./media/pawna_logo png.png" > -->
                 <h1 class="title">
                     WELCOME,
                     <p>To the world of lakes. !</p> 
@@ -60,12 +60,12 @@
                               
                               <div class="input-Name">
                                 <i class="fa-solid fa-envelope icon"></i>
-                                <input type="email" class="text-name" name="email" placeholder="Email" required>
+                                <input type="email" class="text-name" id="email_L" placeholder="Email" required>
                               </div>
 
                               <div class="input-Name">
                                 <i class="fa-solid fa-lock icon"></i>
-                                <input type="password" class="text-name" name="password" placeholder="Password" required>
+                                <input type="password" class="text-name" id="password_L" placeholder="Password" required>
                               </div>  
                               
                               <div class="submit-area">
@@ -74,7 +74,12 @@
                               </div> 
                         </form>
                     </div>
+                    <div class="error_msg_container ">
+                        <h4 id="error_msg_1">
+                        </h4>
+                    </div>
                 </div>
+                
             </div>
 
             <!-- ============= signup form ========== -->
@@ -82,43 +87,57 @@
             <div id="singUp-togg" class="signup-form">
                 <div class="signup-form-container">
                     <div class="form_heading">
-                        <h2>Sing up to Dashboard</h2>
+                        <h2>Create new account</h2>
                     </div>
                     <div class="form-container">
                         <form action="#" class="signup">
                               <div class="input-Name">
                                 <i class="fa-solid fa-user icon"></i>
-                                <input type="text" class="name" name="firstName" placeholder="First Name" required>
+                                <input type="text" class="name"   placeholder="First Name"  id="firstName" required>
                                 <span>
                                 <i class="fa-solid fa-user icon"></i>
-                                <input type="text" class="name" name="lastName" placeholder="Last Name" required>
+                                <input type="text" class="name"  placeholder="Last Name" id="lastName" required>
                                 </span>
                               </div>
 
                               <div class="input-Name">
                                 <i class="fa-solid fa-envelope icon"></i>
-                                <input type="email" class="text-name" name="email" placeholder="Email" required>
+                                <input type="email" class="text-name"  placeholder="Email"  id="email" required>
                               </div>
 
                               <div class="input-Name">
                                 <i class="fa-solid fa-lock icon"></i>
-                                <input type="password" class="text-name" name="password" placeholder="Password" required>
+                                <input type="password" class="text-name"  placeholder="Password"  id="password" required>
                               </div>
 
                               <div class="input-Name">
                                 <i class="fa-solid fa-lock icon"></i>
-                                <input type="password" class="text-name" name="password" placeholder="Confirm Password" required>
+                                <input type="password" class="text-name"  placeholder="Confirm Password" id="password2" required>
                               </div>  
                               
                               <div class="submit-area">
-                                <button type="button" onclick="signUp()" class="btn" >Sign up</button>
+                                <button type="button" onclick="singup()" class="btn" >Sign up</button>
                                 <button type="button" onclick="pageChange()" class="btn-change" >Login here</button>
                               </div> 
                         </form>
                     </div>
+                    <div class="error_msg_container ">
+                        <h4 id="error_msg_1">
+                        </h4>
+                    </div>
                 </div>      
             </div>
+
+            <div id="login_dashboard" class="dashboard">
+                <div class="dashboard_heading">
+                    <h1 class="success_msg">"Succesfully Logged In"</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis voluptatum commodi quas ex sunt. Culpa, velit repudiandae iste, debitis asperiores aut corporis recusandae tempore nesciunt adipisci ea laboriosam alias.
+                    </p>
+                </div>
+            </div>
         </div>
+
     </div>
     
 
