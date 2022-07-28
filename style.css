@@ -19,6 +19,8 @@
 
 body{
     color: white;
+    background: url(./media/images.jpg);
+
 }
 
 .background-area{
@@ -49,8 +51,8 @@ body{
 .login-design{
     background-color: rgb(0, 58, 92);
     border: none;
-    border-radius: 1rem 0 0 1rem;
-    /* box-shadow: 0rem 0rem 2rem 0rem rgb(0, 0, 0, 0.5); */
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 2rem 0rem rgb(0, 0, 0, 0.5);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -100,14 +102,13 @@ body{
     align-self: flex-end;
     width: 30%;
     height: 5rem;
-    /* background-color: black; */
 }
 
 #waveSection .wave1{
-    border-radius: 0 0 0 1rem;
+    border-radius: 0 0 1rem 1rem;
 }
 #waveSection .wave2{
-    border-radius: 0 0 0 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
 #waveSection .wave{
@@ -310,9 +311,11 @@ body{
     background-color: rgb(0, 58, 92);
 }
 .btn:hover{
-    border : 1px solid rgb(0, 58, 92);
+    /* border : 1px solid rgb(0, 58, 92);
     background-color: white;
-    color: rgb(0, 58, 92);
+    color: rgb(0, 58, 92); */
+    background-color: green;
+    border: 1px solid green;
 }
 
 .btn-change{
@@ -343,6 +346,11 @@ body{
 }
 
 
+/*  to be deleted */
+
+
+
+
 /* =================== login_dashboard ============ */
 
 #login_dashboard{
@@ -356,76 +364,167 @@ body{
     padding: 1rem;
     color: rgb(0, 58, 92);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
 .dashboard_heading{
-    width: 80%;
-    height: 100%;
-    background-color: aqua;
+    padding: 1rem 1rem 0.5rem;
+}
+
+.dashboard_heading h3{
+    font-size: 1.5rem;
+}
+.lake_info{
+    padding: 0.5rem 1rem;
+}
+.lake_info h4{
+    padding-bottom: 0.5rem;
+}
+.lake_info p{
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+.logout_btn{
+    width: 30%;
+    padding: 0.5rem;
+    background-color: rgb(0, 58, 92);
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.logout_btn:hover{
+    background-color: red;
+    color: white;
 }
 
 
-
-/* ============== (responsive for mobile 600px ) =================== */
+/* ============== (responsive for tablate 1000px ) =================== */
 
 @media screen and (max-width : 1000px) {
-
     .login-area{
         width: 80%;
-        grid-template-columns: 1fr;
-        height: 70%;
+        height: 80vh;
     }
-
-    #waveSection{
-        top: 38.5%;
-        width: 80%;
-    }
-
+    
     .login-design{
-        background-color: rgb(0, 58, 92);
-        border: none;
-        border-radius: 1rem;
-        box-shadow: 0rem 0rem 2rem 0rem rgb(0, 0, 0, 0.5);
-        height: 35vh;
-        display: block;
-        padding: 1rem;
+        padding: 3rem;
+        gap: 2rem;
     }
 
-    .logo{
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 0.5rem;
-    }
-    
     .title{
-        font-size: 1.2rem;
-        font-weight: 700;
-        letter-spacing: 0.02px;
-        padding: 0 .5rem .5rem;
-        text-align: center;
+        font-size: 2.5rem;
+        padding: 0 1rem 1.5rem;
     }
-    .title p {
-        font-size: 1rem;
-    }
-    .para{
-        text-align: center;
-        margin-top: 0;
-        font-size: 0.8rem;
-    }
-    
+
     .social-icons{
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        padding: 0.8rem;
+        gap: 1.5rem;
     }
     
     .icon i {
-        font-size: 1.5rem;
-        color: white;
-        padding-bottom: 0.5rem;
+        font-size: 1.9rem;
     }
+
+    /* ============== wave animation =========== */
+    #waveSection{
+        width: 40%;
+        height: 5rem;
+    }
+    
+    /* =============== signin / login form =======  */
+ 
+}
+
+/* ============== (responsive for tablate 1000px ) =================== */
+
+@media screen and (max-width : 800px) {
+    
+    .login-area{
+        width: 80%;
+        height: 80vh;
+    }
+    
+    .login-design{
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        padding: 0 1rem 1.5rem;
+    }
+
+    .title p{
+        font-size: 1.4rem;
+    }
+ 
+}
+
+/* ============== (responsive for mobile 600px ) =================== */
+
+@media screen and (max-width : 600px) {
+
+    
+.background-area{
+    width: 100%;
+    height: 100vh;
+    background: none;
+}
+
+
+/* ============  left login area ============ */
+.login-area{
+    width: 80%;
+    height: 90vh;
+    background-color: white;
+    grid-template-columns: 1fr;
+}
+
+.login-design{
+    padding: 1.3rem;
+    gap: 1rem;
+}
+
+
+.title{
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02px;
+    padding: 0;
+    text-align: center;
+}
+.title p {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+}
+.para{
+    margin-top: 0;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* ============= wave animation ============== */
+
+#waveSection{
+    position: block ;
+    align-self: flex-start;
+    top: 35%;
+    width: 80%;
+    height: 5rem;
+}
+
+#waveSection .wave1{
+    border-radius: 0 0 1rem 1rem;
+}
+#waveSection .wave2{
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+ 
+ 
 }

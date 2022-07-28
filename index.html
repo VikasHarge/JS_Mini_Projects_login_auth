@@ -20,14 +20,14 @@
     <!-- ======= background ======== -->
     <div class="background-area">
 
-        <div class="login-area">
+        <div  class="login-area">
             <!-- ========= left section ========= -->
-            <div class="login-design">
+            <div id="welcome_page_1" class="login-design">
                 <div class="logo-div"></div>
                 <!-- <img class="logo" src="./media/pawna_logo png.png" > -->
-                <h1 class="title">
+                <h1  class="title">
                     WELCOME,
-                    <p>To the world of lakes. !</p> 
+                    <p id="welcome_greeting" >To the world of lakes. !</p> 
                 </h1>
                 <p class="para">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, itaque.
@@ -47,6 +47,8 @@
                 <div class="wave wave3"></div>
                 <div class="wave wave4"></div>
             </section>
+
+<!-- ===================================== right side section start ======================================  -->
 
             <!-- ============= login form =========== -->
 
@@ -128,31 +130,34 @@
                 </div>      
             </div>
 
+            <!-- ========== dash board after login ============== -->
+
             <div id="login_dashboard" class="dashboard">
                 <div class="dashboard_heading">
-                    <h1 class="success_msg">"Succesfully Logged In"</h1>
+                    <h3>Welcome,</h1>
+                    <h4>To the world of lakes</h1>
+                </div>
+                <div class="lake_info">
+                    <h4>
+                        Lake 1
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis voluptatum commodi quas ex sunt. Culpa, velit repudiandae iste, debitis asperiores aut corporis recusandae tempore nesciunt adipisci ea laboriosam alias.
+                    </p>
+
+                    <h4>
+                        Lake 2
+                    </h4>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis voluptatum commodi quas ex sunt. Culpa, velit repudiandae iste, debitis asperiores aut corporis recusandae tempore nesciunt adipisci ea laboriosam alias.
                     </p>
                 </div>
+                <button type="button" onclick="logOut()" class="logout_btn" >Log out</button>
             </div>
         </div>
 
     </div>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="./main.js"></script>
