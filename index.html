@@ -17,8 +17,11 @@
 </head>
 <body>
 
+    <!-- ======= background ======== -->
     <div class="background-area">
+
         <div class="login-area">
+            <!-- ========= left section ========= -->
             <div class="login-design">
                 <div class="logo-div"></div>
                 <img class="logo" src="./media/pawna_logo png.png" >
@@ -35,19 +38,85 @@
                     <li class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                 </div>
             </div>
+
+            <!-- =========== wave animation ======== -->
+
             <section id="waveSection">
                 <div class="wave wave1"></div>
                 <div class="wave wave2"></div>
                 <div class="wave wave3"></div>
                 <div class="wave wave4"></div>
             </section>
-            <div class="login-form">
-                <div class="login_heading">
-                    Login to Dashboard
+
+            <!-- ============= login form =========== -->
+
+            <div id="logIn-togg" class="signup-form login-form">
+                <div class="signup-form-container">
+                    <div class="form_heading">
+                        <h2>Login to Dashboard</h2>
+                    </div>
+                    <div class="form-container">
+                        <form action="#" class="signup">
+                              
+                              <div class="input-Name">
+                                <i class="fa-solid fa-envelope icon"></i>
+                                <input type="email" class="text-name" name="email" placeholder="Email" required>
+                              </div>
+
+                              <div class="input-Name">
+                                <i class="fa-solid fa-lock icon"></i>
+                                <input type="password" class="text-name" name="password" placeholder="Password" required>
+                              </div>  
+                              
+                              <div class="submit-area">
+                                <button type="button" onclick="login()" class="btn" >Log in</button>
+                                <button type="button" onclick="loginChange()" class="btn-change" >Register</button>
+                              </div> 
+                        </form>
+                    </div>
                 </div>
-                <input type="text" class="userName">
-                <br>
-                <input type="password" class="password">    
+            </div>
+
+            <!-- ============= signup form ========== -->
+
+            <div id="singUp-togg" class="signup-form">
+                <div class="signup-form-container">
+                    <div class="form_heading">
+                        <h2>Sing up to Dashboard</h2>
+                    </div>
+                    <div class="form-container">
+                        <form action="#" class="signup">
+                              <div class="input-Name">
+                                <i class="fa-solid fa-user icon"></i>
+                                <input type="text" class="name" name="firstName" placeholder="First Name" required>
+                                <span>
+                                <i class="fa-solid fa-user icon"></i>
+                                <input type="text" class="name" name="lastName" placeholder="Last Name" required>
+                                </span>
+                              </div>
+
+                              <div class="input-Name">
+                                <i class="fa-solid fa-envelope icon"></i>
+                                <input type="email" class="text-name" name="email" placeholder="Email" required>
+                              </div>
+
+                              <div class="input-Name">
+                                <i class="fa-solid fa-lock icon"></i>
+                                <input type="password" class="text-name" name="password" placeholder="Password" required>
+                              </div>
+
+                              <div class="input-Name">
+                                <i class="fa-solid fa-lock icon"></i>
+                                <input type="password" class="text-name" name="password" placeholder="Confirm Password" required>
+                              </div>  
+                              
+                              <div class="submit-area">
+                                <button type="button" onclick="signUp()" class="btn" >Sign up</button>
+                                <button type="button" onclick="pageChange()" class="btn-change" >Login here</button>
+                              </div> 
+                        </form>
+                    </div>
+                </div>      
             </div>
         </div>
     </div>
