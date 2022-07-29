@@ -9,7 +9,7 @@ and mobile phones (600px).
 
 ## Over View of Webpage
 
-<img src="./media src/overview.png" >
+<img src="media\overview.png" >
 
 ## Languages/tools Used
 
