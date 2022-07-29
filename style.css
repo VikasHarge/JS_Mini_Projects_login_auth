@@ -35,7 +35,6 @@ body{
 }
 
 
-/* ============  left login area ============ */
 .login-area{
     width: 60%;
     height: 75vh;
@@ -48,34 +47,33 @@ body{
     box-shadow: 0rem 0rem 2rem 0rem rgb(0, 0, 0, 0.5);
 }
 
-.login-design{
+
+/* ============  left login area ============ */
+
+.design_container{
     background-color: rgb(0, 58, 92);
-    border: none;
     border-radius: 1rem;
-    box-shadow: 0rem 0rem 2rem 0rem rgb(0, 0, 0, 0.5);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.logo{
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 1rem;
+.login-design{
+    border: none;
+    border-radius: 1rem 1rem 0 0;
+    padding: 2rem 2rem 0;
+    display: grid;
+    gap: 1rem;
 }
 
 .title{
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.02px;
-    padding: 0 1rem 1rem;
+    padding:2rem 1rem 1rem;
     text-align: center;
 }
 .title p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .para{
     text-align: center;
@@ -85,23 +83,28 @@ body{
 .social-icons{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .icon i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
     padding-bottom: 1rem;
 }
 
 /* ============= wave animation ============== */
 
+.wave_container{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 #waveSection{
-    position: absolute;
-    align-self: flex-end;
-    width: 30%;
-    height: 5rem;
+    width: 100%;
+    height: 100%;
 }
 
 #waveSection .wave1{
@@ -113,12 +116,12 @@ body{
 
 #waveSection .wave{
     position: absolute;
+    background: url(./media/wave.png);
     bottom: 0;
     left: 0;
     width: 100%;
     height: 2rem;
-    background: url(./media/wave.png);
-    background-size: 100% 2rem;
+    background-size: 100% 2rem; 
 }
 
 #waveSection .wave.wave1{
@@ -126,7 +129,7 @@ body{
     z-index: 999;
     opacity: 0.9;
     animation-delay: 0s;
-    bottom: 0;
+    bottom: -0.;
 }
 
 #waveSection .wave.wave2{
@@ -427,10 +430,10 @@ body{
     }
 
     /* ============== wave animation =========== */
-    #waveSection{
+    /* #waveSection{
         width: 40%;
         height: 5rem;
-    }
+    } */
     
     /* =============== signin / login form =======  */
  
@@ -511,7 +514,7 @@ body{
 
 /* ============= wave animation ============== */
 
-#waveSection{
+/* #waveSection{
     position: block ;
     align-self: flex-start;
     top: 35%;
@@ -524,7 +527,7 @@ body{
 }
 #waveSection .wave2{
     border-radius: 0 0 0.5rem 0.5rem;
-}
+} */
  
  
 }

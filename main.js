@@ -99,6 +99,34 @@ function logOut (){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ====================== save login data and check for user =================== //
 
 
